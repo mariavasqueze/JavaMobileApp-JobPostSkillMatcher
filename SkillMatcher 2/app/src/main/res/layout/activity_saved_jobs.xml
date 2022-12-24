@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/soft"
+    tools:context=".SavedJobs">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:background="#20FFFFFF"
+        android:backgroundTint="#20FFFFFF"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingTop="20dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="20dp">
+        <TextView
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:gravity="center_horizontal"
+            android:text="Saved Matches"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtMatchesList"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scrollbars="vertical"
+            android:text="Matches List with ID"
+            android:layout_marginBottom="30dp"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/txtMessage2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="To Delete a match, enter the ID bellow and click Delete Match."
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"/>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp">
+
+            <TextView
+                android:id="@+id/txtMatchChange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:text="Enter ID: "
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/inputDelete"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:ems="10"
+                android:background="#FFFFFF"
+                android:backgroundTint="#FFFFFF"
+                android:hint="# of match to delete"
+                android:inputType="textPersonName"
+                android:textSize="20sp" />
+
+        </TableRow>
+
+        <Button
+            android:id="@+id/btnDeleteMatch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#bf6fec"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="Delete Match" />
+
+        <TextView
+            android:id="@+id/txtNote2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="bottom"
+            android:text="Please refresh page to see the changes"
+            android:textColor="#e4314e"
+            android:textSize="16sp" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

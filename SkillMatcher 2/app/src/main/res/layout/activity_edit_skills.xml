@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/soft"
+    tools:context=".EditSkills">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:background="#20FFFFFF"
+        android:backgroundTint="#20FFFFFF"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingTop="20dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="20dp">
+
+        <TextView
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:gravity="center_horizontal"
+            android:text="Edit Skill List"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtSkillsList"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginBottom="30dp"
+            android:scrollbars="vertical"
+            android:text="Skill List:"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txtMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter the skill you want to Add:"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp">
+
+            <TextView
+                android:id="@+id/txtSkillChange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enter Skill: "
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+            <Spinner
+                android:id="@+id/skillChange"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="#FFFFFF"
+                android:backgroundTint="#FFFFFF"
+                android:entries="@array/skill_options"
+                android:maxWidth="100dp" />
+
+            <Button
+                android:id="@+id/btnAddNewSkill"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:backgroundTint="#e4314e"
+                android:text="Add Skill" />
+
+        </TableRow>
+
+        <TextView
+            android:id="@+id/txtMessageDel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="To Delete a skill, enter the number (Ex: 1)"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp">
+
+
+            <TextView
+                android:id="@+id/txtSkillDelete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enter Skill #: "
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/skillDelete"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:hint="# of skill"
+                android:inputType="textPersonName"
+                android:background="#FFFFFF"
+                android:backgroundTint="#FFFFFF"
+                android:textSize="20sp" />
+
+
+
+
+            <Button
+                android:id="@+id/btnDeleteSkill"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:backgroundTint="#bf6fec"
+
+                android:text="Delete Skill" />
+
+        </TableRow>
+
+
+        <TextView
+            android:id="@+id/txtNote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="bottom"
+            android:text="Please refresh page to see the changes"
+            android:textColor="#e4314e"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+
+</LinearLayout>

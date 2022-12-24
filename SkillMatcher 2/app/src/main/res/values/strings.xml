@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Skill Matcher</string>
+    <string-array name="skill_options">
+        <item>GitHub</item>
+        <item>Development</item>
+        <item>Design</item>
+        <item>Data</item>
+        <item>Customer Success</item>
+        <item>Cloud</item>
+        <item>Testing</item>
+        <item>Plan</item>
+        <item>Marketing</item>
+        <item>Leadership</item>
+        <item>Innovation</item>
+        <item>Engineering</item>
+        <item>Backend</item>
+        <item>Frontend</item>
+        <item>Javascript</item>
+        <item>React</item>
+        <item>Redux</item>
+        <item>Java</item>
+        <item>Engagement</item>
+        <item>B2B</item>
+        <item>Growth</item>
+        <item>Quality</item>
+        <item>Coordinating</item>
+        <item>Creative</item>
+        <item>Decision-Maker</item>
+    </string-array>
+</resources>
